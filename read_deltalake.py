@@ -22,7 +22,7 @@
 
 
 from deltalake import DeltaTable
-dt = DeltaTable("/root/projects/conda-setup/sample_delta_table")
+dt = DeltaTable("/root/projects/conda-setup/spark_delta_table")
 
 df = dt.to_pandas()
 print(df)
