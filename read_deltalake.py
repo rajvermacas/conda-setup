@@ -24,5 +24,16 @@
 from deltalake import DeltaTable
 dt = DeltaTable("/root/projects/conda-setup/spark_delta_table")
 
+# df = dt.to_pandas()
+# print(df)
+metadata = dt.metadata()
+configuration = metadata.configuration
+
+print("configuration")
+print(configuration)
+
+print("metadata")
+print(metadata)
+
 df = dt.to_pandas()
 print(df)

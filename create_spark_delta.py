@@ -53,7 +53,6 @@ df.write \
     .format("delta") \
     .mode("overwrite") \
     .option("delta.enableDeletionVectors", "true") \
-    .option("delta.deletionVectorsUpdateInterval", "10") \
     .partitionBy("category") \
     .save(delta_table_path)
 
